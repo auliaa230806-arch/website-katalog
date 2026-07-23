@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechVault - Katalog Gadget & Aksesori Modern</title>
-    <!-- CSS Eksternal -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google Fonts -->
+    <title>TechVault - Beranda</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header>
+        <div class="navbar-container">
+            <a href="index.html" class="logo">Tech<span>Vault</span></a>
+            
+            <button class="hamburger-menu" id="hamburger" aria-label="Buka Menu Navigasi">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link active">Beranda</a></li>
+                    <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="katalog.html" class="nav-link">Katalog Produk</a></li>
+                    <li><a href="galeri.html" class="nav-link">Galeri Visual</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak & Tanya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Temukan Gadget Impian Anda Tanpa Ribet</h1>
+                <p>Eksplorasi katalog produk teknologi modern terbaik dengan spesifikasi lengkap dan harga transparan.</p>
+                <a href="katalog.html" class="btn-primary">Lihat Katalog</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Suasana kerja modern" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 TechVault Catalog. Tugas UAS Perancangan Web.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
