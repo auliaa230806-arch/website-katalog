@@ -1,1 +1,1 @@
-# tugas-web
+# Website katalog produk tanpa transaksi pembayaran.
