@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVault - Katalog Produk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-container">
+            <a href="index.html" class="logo">Tech<span>Vault</span></a>
+            
+            <button class="hamburger-menu" id="hamburger" aria-label="Buka Menu Navigasi">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="katalog.html" class="nav-link active">Katalog Produk</a></li>
+                    <li><a href="galeri.html" class="nav-link">Galeri Visual</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak & Tanya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-section">
+            <div class="section-title">
+                <h2>Katalog Produk</h2>
+                <p>Filter berdasarkan kategori untuk menemukan produk pilihan Anda</p>
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="laptop">Laptop</button>
+                <button class="filter-btn" data-category="audio">Audio</button>
+                <button class="filter-btn" data-category="aksesoris">Aksesoris</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Card Produk 1 -->
+                <article class="product-card" data-category="laptop">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80" alt="Laptop Pro Ultra Modern" class="product-img">
+                    <div class="product-info">
+                        <span class="badge">Laptop</span>
+                        <h3>Laptop Pro Ultra 14"</h3>
+                        <p class="price">Rp 18.500.000</p>
+                        <p class="desc">Prosesor generasi terbaru, layar OLED 4K, dan daya tahan baterai hingga 18 jam.</p>
+                        <button class="btn-detail" data-title="Laptop Pro Ultra 14&quot;" data-desc="Prosesor generasi terbaru, layar OLED 4K, RAM 16GB, SSD 1TB." data-price="Rp 18.500.000">Detail Spesifikasi</button>
+                    </div>
+                </article>
+
+                <!-- Card Produk 2 -->
+                <article class="product-card" data-category="audio">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Wireless Headphone" class="product-img">
+                    <div class="product-info">
+                        <span class="badge">Audio</span>
+                        <h3>Wireless ANC Headphone</h3>
+                        <p class="price">Rp 3.200.000</p>
+                        <p class="desc">Peredam bising aktif premium dengan kualitas suara Hi-Res dan bass mendalam.</p>
+                        <button class="btn-detail" data-title="Wireless ANC Headphone" data-desc="Active Noise Cancelling, Driver 40mm, Baterai 30 Jam, Bluetooth 5.2." data-price="Rp 3.200.000">Detail Spesifikasi</button>
+                    </div>
+                </article>
+
+                <!-- Card Produk 3 -->
+                <article class="product-card" data-category="aksesoris">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80" alt="Mouse Ergonomis" class="product-img">
+                    <div class="product-info">
+                        <span class="badge">Aksesoris</span>
+                        <h3>Mouse Precision Wireless</h3>
+                        <p class="price">Rp 850.000</p>
+                        <p class="desc">Desain ergonomis mengurangi pegal, presisi tinggi untuk produktivitas maksimal.</p>
+                        <button class="btn-detail" data-title="Mouse Precision Wireless" data-desc="Sensor 4000 DPI, koneksi Multi-device, baterai tahan 70 hari." data-price="Rp 850.000">Detail Spesifikasi</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Popup Detail Produk -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModalBtn">&times;</span>
+            <h3 id="modalTitle">Judul Produk</h3>
+            <p id="modalPrice" class="price"></p>
+            <hr><br>
+            <p id="modalDesc">Deskripsi detail produk.</p>
+        </div>
+    </div>
+
+    <button id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 TechVault Catalog. Tugas UAS Perancangan Web.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
